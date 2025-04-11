@@ -1,0 +1,27 @@
+<MenuScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 40
+        spacing: 20
+
+        Label:
+            text: 'MEU JOGO FUTURISTA'
+            font_size: '28sp'
+            bold: True
+            size_hint_y: 0.2
+
+        Button:
+            text: 'Jogar'
+            on_release: app.root.current = 'jogo'
+        
+        Button:
+            text: 'Configurações'
+            on_release: app.root.current = 'config'
+
+        Button:
+            text: 'Loja'
+            on_release: app.root.current = 'loja'
+        
+        Button:
+            text: 'Skins'
+            on_release: app.root.current = 'skins'
